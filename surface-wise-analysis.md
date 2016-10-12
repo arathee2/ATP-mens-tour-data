@@ -146,7 +146,7 @@ win_loss_top_hard <- na.omit(win_loss_hard) %>% mutate(win_loss_ratio = wins/los
 ggplot(data = win_loss_top_hard,aes(y = win_loss_ratio, x = name )) + geom_bar(stat = "identity", fill = "#2A628F") + labs(title = "Win/Loss Ratio in Hard/Carpet Courts", x = "Player", y = "Win/Loss Ratio") + scale_y_continuous(breaks = seq(0,6,0.3))
 ```
 
-![](surface-wise-analysis-github-output_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](surface-wise-analysis/figure-markdown_github/unnamed-chunk-2-1.png)
 
 We can see that Djokovic dominatee the hard court although Federer is not far behind. Winner : Novak Djokovic
 
@@ -199,7 +199,7 @@ win_loss_top_grass <- na.omit(win_loss_grass) %>% mutate(win_loss_ratio = wins/l
 ggplot(data = win_loss_top_grass,aes(y = win_loss_ratio, x = name )) + geom_bar(stat = "identity", fill = "#00DB5F") + labs(title = "Win/Loss Ratio in grass courts", x = "Player", y = "Win/Loss Ratio") + scale_y_continuous(breaks = seq(0,8,0.4))
 ```
 
-![](surface-wise-analysis-github-output_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](surface-wise-analysis/figure-markdown_github/unnamed-chunk-3-1.png)
 
 Federer dominates the grass courts by a significant margin as expected. Winner: Roger Federer
 
@@ -252,7 +252,7 @@ win_loss_top_clay <- na.omit(win_loss_clay) %>% mutate(win_loss_ratio = wins/los
 ggplot(data = win_loss_top_clay,aes(y = win_loss_ratio, x = name )) + geom_bar(stat = "identity", fill = "#BE5A38") + labs(title = "Win/Loss Ratio in clay courts", x = "Player", y = "Win/Loss Ratio") + scale_y_continuous(breaks = seq(0,10.5,0.5))
 ```
 
-![](surface-wise-analysis-github-output_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](surface-wise-analysis/figure-markdown_github/unnamed-chunk-4-1.png)
 
 Nadal shines here. He significantly dominates the others on clay. No one is even near him. Winner: Rafael Nadal
 
